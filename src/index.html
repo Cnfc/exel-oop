@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='shortcut icon' href='favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
@@ -12,71 +11,50 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-  <title>Pure JS Exel</title>
+  <title>Exel Main page</title>
 </head>
 
 <body>
-  <div id='app' class="container">
-    <div class="exel">
-      <div class="exel__header">
-        <input class='input' value="New Table" />
-        <div>
-          <div class="button">
-            <i class='materail-icons'>
-              delete
-            </i>
 
-          </div>
-          <div class="button">
+  <div id='app'>
 
-            <i class='materail-icons'>
-              exit_to_app
-            </i>
-          </div>
-        </div>
+    <div class="db">
+      <div class="db__header">
+        <h1>Dashboard Exel </h1>
       </div>
 
-      <div class="exel__toolbar">
-        <div class="button">
-          <i class='materail-icons'>Left</i>
-        </div>
+      <div class="db__new">
+        <div class="db__view">
 
-        <div class="button">
-          <i class='materail-icons'>Center</i>
-        </div>
-
-        <div class="button">
-          <i class='materail-icons'>Right</i>
-        </div>
-
-        <div class="button">
-          <i class='materail-icons'>BOLD</i>
-        </div>
-
-        <div class="button">
-          <i class='material-icons'>IN</i>
-        </div>
-
-        <div class="button">
-          <i class='material-icons'>SOme</i>
-        </div>
-
-
-      </div>
-
-      <div class="exel__formula">
-        <div class="info">fx</div>
-        <div class="input" contenteditable spellcheck="false">
+          <a href="#" class='db_create'>
+            New <br /> Table
 
         </div>
       </div>
 
+      <div class="db__table db__view">
 
-      <div class="exel__table">
+        <div class="db__list_header">
+          <span>Name</span>
+          <span>Date</span>
+        </div>
+
+        <ul class="db__list">
+          <li class="db__record">
+            <a href="#">Table N1</a>
+            <strong>12.06.2020</strong>
+          </li>
+          <li class="db__record">
+            <a href="#">Table n2</a>
+            <strong>12.06.2020</strong>
+          </li>
+        </ul>
 
       </div>
     </div>
+
   </div>
+
 </body>
 
 </html>

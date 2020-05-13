@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' href='favicon.ico'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <title>Pure JS Exel</title>
+</head>
+
+<body>
+  <div id='app' class="container">
+    <div class="exel">
+      <div class="exel__header">
+        <input class='input' value="New Table" />
+        <div>
+          <div class="button">
+            <i class='materail-icons'>
+              delete
+            </i>
+
+          </div>
+          <div class="button">
+
+            <i class='materail-icons'>
+              exit_to_app
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="exel__toolbar">
+        <div class="button">
+          <i class='materail-icons'>Left</i>
+        </div>
+
+        <div class="button">
+          <i class='materail-icons'>Center</i>
+        </div>
+
+        <div class="button">
+          <i class='materail-icons'>Right</i>
+        </div>
+
+        <div class="button">
+          <i class='materail-icons'>BOLD</i>
+        </div>
+
+        <div class="button">
+          <i class='material-icons'>IN</i>
+        </div>
+
+        <div class="button">
+          <i class='material-icons'>SOme</i>
+        </div>
+
+
+      </div>
+
+      <div class="exel__formula">
+        <div class="info">fx</div>
+        <div class="input" contenteditable spellcheck="false">
+
+        </div>
+      </div>
+
+
+      <div class="exel__table">
+
+        <div class="row">
+          <div class="row-info">
+
+          </div>
+
+          <div class="row-data">
+            <div class="column">
+              A
+            </div>
+            <div class="column">
+              B
+            </div>
+            <div class="column">
+              C
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="row-info">
+            1
+          </div>
+
+          <div class="row-data">
+            <div class="cell selected" contenteditable="true">1</div>
+            <div class="cell" contenteditable="true">2</div>
+            <div class="cell" contenteditable="true">3</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
